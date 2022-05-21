@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito+Sans:wght@300;600;800&family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; border-bottom: none; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+      font-family: 'Kumbh Sans', sans-serif;
+
+    }
+    main{
+      background-color: hsl(240, 5%, 91%);
+      width:70%;
+      margin:0 auto;
+      border-radius: 12px;
+      padding:50px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10vh;
+      /* position: relative; */
+ 
+      overflow: hidden;
+    }
+    h4{
+      font-weight: 300;
+    }
+    h4:hover{
+      color: hsl(14, 88%, 65%);
+      cursor: pointer;
+    }
+    p{
+      display: none;
+    }
+.faq{
+  /* background-color: rgb(174, 223, 0); */
+  width: 50%;
+  padding: 10px 0 50px 50px;
+  margin-left:50px;
+  
+  
+}
+.images{
+  position: relative;
+}
+.box{
+  position:absolute;
+  top: 130px;
+  left: -130px;
+  
+  
+}
+.woman{
+  /* width: 50%; */
+  position: absolute;
+  top: -20px;
+  left: -130px;
+ 
+}
+@media screen and (max-width: 375px) {
+            body{
+              font-weight: 300;
+              background-size: 100% 100vh;
+              font-size: 12px;
+            }
+            main{
+              width:375x;
+              /* height: 538px; */
+              flex-direction: column;
+              margin:10vh auto;
+              padding: 15px;
+              /* position: relative; */
+            }
+            /* img{
+              padding:
+                15px;
+                position: absolute;
+                top: 0;
+    left: 100px;
+   width: 50%;
+                
+              
+            } */
+            .woman{
+              position: absolute;
+            top:-50px;
+            left:70px;
+            width:50%;
+            }
+            .box{
+              position: absolute;
+              top:0px;
+            left:70px;
+            width:20%;
+            }
+            .faq{
+              width: 100%;
+              /* background-color: black; */
+              padding:0;
+              margin: 10vh auto;
+            }
+            h1{
+              text-align: center;
+            }
+            div{
+              border-bottom: 1px solid hsl(240, 19%, 84%);
+              
+            }
+            .images{
+              border-bottom: none;
+              position: relative;
+            }
+            }
+
+  </style>
+</head>
+<body>
+  <main>
+
+    <div class="images">
+      
+    <img src="images/illustration-woman-online-desktop.svg" alt="woman" class="woman">
+    <img src="images/illustration-box-desktop.svg" alt="box" class="box">
+
+
+    </div>
+
+
+    <section class="faq">
+      <h1>FAQ</h1>
+    <div>
+      <h4 class="first">How many team members can I invite? <span class="span1"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></span></h4>
+  <p class="p1">You can invite up to 2 additional users on the Free plan. There is no limit on 
+    team members for the Premium plan. </p>
+    </div>
+
+  <div>
+    <h4>What is the maximum file upload size? <span class="span2"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></span></h4>
+<p class="p2">  No more than 2GB. All files in your account must fit your allotted storage space.
+</p>
+  </div>
+  <div>
+    <h4>How do I reset my password? <span class="span3"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></span></h4>
+  <p class="p3">Click “Forgot password” from the login page or “Change password” from your profile page.
+    A reset link will be emailed to you.</p>
+
+  </div>
+  <div>
+    <h4>Can I cancel my subscription? <span class="span4"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></span></h4>
+ <p class="p4"> Yes! Send us a message and we’ll process your request no questions asked.
+</p>
+  </div>
+  <div>
+    <h4>Do you provide additional support? <span class="span5"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></span></h4>
+<p class="p5">  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+</p>
+  </div>
+    </section>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Koshir0</a>.
+
+    <script>
+      const span1 = document.querySelector(".span1");
+      const span2 = document.querySelector(".span2");
+      const span3 = document.querySelector(".span3");
+      const span4 = document.querySelector(".span4");
+      const span5 = document.querySelector(".span5");
+      const p1 = document.querySelector(".p1");
+      const p2 = document.querySelector(".p2");
+      const p3 = document.querySelector(".p3");
+      const p4 = document.querySelector(".p4");
+      const p5 = document.querySelector(".p5");
+     
+        
+         span1.addEventListener('click', event => {
+          if (p1.style.display == "block"){
+            p1.style.display = "none";
+            document.querySelector("h4").style.fontWeight =300;
+          }else{
+            p1.style.display = "block";
+            
+            document.querySelector("h4").style.fontWeight = 700;
+
+          }
+          })
+          span2.addEventListener('click', event => {
+          if (p2.style.display == "block"){
+            p2.style.display = "none";
+          }else{
+            p2.style.display = "block";
+          }
+          })
+          span3.addEventListener('click', event => {
+          if (p3.style.display == "block"){
+            p3.style.display = "none";
+          }else{
+            p3.style.display = "block";
+          }
+          })
+          span4.addEventListener('click', event => {
+          if (p4.style.display == "block"){
+            p4.style.display = "none";
+          }else{
+            p4.style.display = "block";
+          }
+          })
+          span5.addEventListener('click', event => {
+          if (p5.style.display == "block"){
+            p5.style.display = "none";
+          }else{
+            p5.style.display = "block";
+          }
+          })
+      
+      
+      
+    </script>
+  </div>
+</body>
+</html>
